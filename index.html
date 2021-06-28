@@ -3,15 +3,15 @@
 
 <head>
   	<meta charset="utf-8">
-	<meta name="viewport"	content="width=device-width, initial-scale=1.0">
-	<meta name="description"content="Chris Brown | Quality Assurance"> <!---Web Searches--->
-	<Title> "Code Repositories" </Title>
+	<meta name="viewport"		content="width=device-width, initial-scale=1.0">
+	<meta name="description"	content="Chris Brown | Quality Assurance"> <!---Web Searches--->
+	<Title> "Chris Brown | Code Repositories" </Title>
 
 <style>
 .collapsible {
  	background-color: #67b2c7;
 	height: 10%; /*reactive*/
-	margin-left: 40px;
+	/*margin-left: 14%; controlled by main class*/
   	color: white;
   	cursor: pointer;
   	/*padding: 18px; /*non-reactive*/
@@ -30,7 +30,7 @@
 
 .collapsible:after {
   	content: '\002B'; /* Unicode character for "plus" sign (+) */
-  	margin-left: 40px;
+  	/*margin-left: 14%; controlled by main class*/
 	color: white;
   	font-weight: bold;
   	float: Right;
@@ -46,7 +46,7 @@
 .content {
   	padding: 0 18px;
 	width: 80%; 
-  	margin-left: 40px;
+  	/*margin-left: 14%; controlled by main class*/
  	max-height: 0;
   	overflow: hidden;
   	transition: max-height 0.2s ease-out;
@@ -124,9 +124,11 @@ body, html {
 
 .main {
   	/*margin-left: 140px; /* Same width as the sidebar + left position in px */
-	margin-left: 11%; /* Same width as the sidebar + left position in px */ /*reponsive*/
-  	/*font-size: 28px; /* Increased text to enable scrolling */
-  	padding: 0px 10px;
+	padding: 0px 10px;
+	font-style:normal;
+	/*margin-left: 40px;*/
+	margin-left: 17%; /* Same width as the sidebar + left position in px */ /*reponsive*/
+	font-family: times,serif;
 }
 
 @media screen and (max-height: 450px) {
@@ -136,7 +138,7 @@ body, html {
  footer {
 	/*position: Fixed; this makes it sticky always at the bottom of the page*/
 	/*margin-left: 40px;*/
-	margin-left: 4%; /*reponsive*/
+	/*margin-left: 4%; controlled by main class*/
 	width: 100%;
 	padding: 0px 0px 10px 0px; /*top,right,bottom, left */
 	left: 0;
@@ -181,8 +183,7 @@ body, html {
 
 <div class="main">
 	<div>
-		<h2 style="font-size:14pt; font-style:normal;margin-left: 40px;">Code Repositories</h2>
-		<p style="font-family: times,serif; font-size:12pt; font-style:normal;margin-left: 40px;"> 
+		<h2 style="font-size:14pt;">Code Repositories</h2>
 		Code repositories are the backbone of development and allow developers to save code to a central location.  One will need a code repository for saving websites, queries, scripts and code.  <em>It is highly recommended that one begins with building a code respository</em>.<br />
 		<br />
 		Each section expands and explores the topics within the section.
